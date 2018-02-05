@@ -1,0 +1,857 @@
+/* line 1, ../sass/base/_main.scss */
+body {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  background-color: #FAFAFA;
+}
+
+/* line 1, ../sass/base/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../sass/base/_reset.scss */
+html {
+  line-height: 1;
+}
+
+/* line 26, ../sass/base/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 30, ../sass/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 35, ../sass/base/_reset.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 41, ../sass/base/_reset.scss */
+q, blockquote {
+  quotes: none;
+}
+
+/* line 45, ../sass/base/_reset.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 50, ../sass/base/_reset.scss */
+a img {
+  border: none;
+}
+
+/* line 54, ../sass/base/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/base/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* line 6, ../sass/base/_typography.scss */
+p {
+  font-size: 16px;
+}
+
+/* line 10, ../sass/base/_typography.scss */
+h1 {
+  font-size: 4.2rem;
+  font-weight: inherit;
+  line-height: 110%;
+  margin: 2.33333rem 0 2.1rem 0;
+}
+
+/* line 16, ../sass/base/_typography.scss */
+h2 {
+  font-size: 3.56rem;
+  font-weight: inherit;
+  line-height: 110%;
+  margin: 2.33333rem 0 2.1rem 0;
+}
+
+/* line 22, ../sass/base/_typography.scss */
+h3 {
+  font-size: 2.92rem;
+  font-weight: inherit;
+  line-height: 110%;
+  margin: 2.33333rem 0 2.1rem 0;
+}
+
+/* line 28, ../sass/base/_typography.scss */
+h4 {
+  font-size: 2.28rem;
+  font-weight: inherit;
+  line-height: 110%;
+  margin: 2.33333rem 0 2.1rem 0;
+}
+
+/* line 34, ../sass/base/_typography.scss */
+h5 {
+  font-size: 1.64rem;
+  font-weight: inherit;
+  line-height: 110%;
+  margin: 2.33333rem 0 2.1rem 0;
+}
+
+/* line 40, ../sass/base/_typography.scss */
+h6 {
+  font-size: 1rem;
+  font-weight: inherit;
+  line-height: 110%;
+  margin: 2.33333rem 0 2.1rem 0;
+}
+
+/* line 49, ../sass/base/_typography.scss */
+em {
+  font-style: italic;
+}
+
+/* line 50, ../sass/base/_typography.scss */
+strong {
+  font-weight: 700;
+}
+
+/* line 51, ../sass/base/_typography.scss */
+small {
+  font-size: 75%;
+}
+
+/* line 52, ../sass/base/_typography.scss */
+.light {
+  font-weight: 300;
+}
+
+/* line 53, ../sass/base/_typography.scss */
+.thin {
+  font-weight: 100;
+}
+
+/* line 4, ../sass/utils/_align.scss */
+.text-left {
+  text-align: left !important;
+}
+
+/* line 4, ../sass/utils/_align.scss */
+.text-right {
+  text-align: right !important;
+}
+
+/* line 4, ../sass/utils/_align.scss */
+.text-center {
+  text-align: center !important;
+}
+
+/* line 4, ../sass/utils/_align.scss */
+.text-justify {
+  text-align: justify !important;
+}
+
+/* line 4, ../sass/utils/_display.scss */
+.display-none {
+  display: none !important;
+}
+
+/* line 4, ../sass/utils/_display.scss */
+.display-inline {
+  display: inline !important;
+}
+
+/* line 4, ../sass/utils/_display.scss */
+.display-inline-block {
+  display: inline-block !important;
+}
+
+/* line 4, ../sass/utils/_display.scss */
+.display-block {
+  display: block !important;
+}
+
+/* line 4, ../sass/utils/_display.scss */
+.display-table {
+  display: table !important;
+}
+
+/* line 4, ../sass/utils/_display.scss */
+.display-table-cell {
+  display: table-cell !important;
+}
+
+/* line 4, ../sass/utils/_display.scss */
+.display-flex {
+  display: flex !important;
+}
+
+/* line 4, ../sass/utils/_display.scss */
+.display-inline-flex {
+  display: inline-flex !important;
+}
+
+/* line 1, ../sass/utils/_spacing.scss */
+.m-a-0 {
+  margin: 0 !important;
+}
+
+/* line 2, ../sass/utils/_spacing.scss */
+.m-t-0 {
+  margin-top: 0 !important;
+}
+
+/* line 3, ../sass/utils/_spacing.scss */
+.m-r-0 {
+  margin-right: 0 !important;
+}
+
+/* line 4, ../sass/utils/_spacing.scss */
+.m-b-0 {
+  margin-bottom: 0 !important;
+}
+
+/* line 5, ../sass/utils/_spacing.scss */
+.m-l-0 {
+  margin-left: 0 !important;
+}
+
+/* line 6, ../sass/utils/_spacing.scss */
+.m-x-0 {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* line 7, ../sass/utils/_spacing.scss */
+.m-y-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* line 9, ../sass/utils/_spacing.scss */
+.m-a {
+  margin: 1rem !important;
+}
+
+/* line 10, ../sass/utils/_spacing.scss */
+.m-t {
+  margin-top: 1rem !important;
+}
+
+/* line 11, ../sass/utils/_spacing.scss */
+.m-r {
+  margin-right: 1rem !important;
+}
+
+/* line 12, ../sass/utils/_spacing.scss */
+.m-b {
+  margin-bottom: 1rem !important;
+}
+
+/* line 13, ../sass/utils/_spacing.scss */
+.m-l {
+  margin-left: 1rem !important;
+}
+
+/* line 14, ../sass/utils/_spacing.scss */
+.m-x {
+  margin-right: 1rem !important;
+  margin-left: 1rem !important;
+}
+
+/* line 15, ../sass/utils/_spacing.scss */
+.m-y {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* line 16, ../sass/utils/_spacing.scss */
+.m-x-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* line 18, ../sass/utils/_spacing.scss */
+.m-a-md {
+  margin: 1.5rem !important;
+}
+
+/* line 19, ../sass/utils/_spacing.scss */
+.m-t-md {
+  margin-top: 1.5rem !important;
+}
+
+/* line 20, ../sass/utils/_spacing.scss */
+.m-r-md {
+  margin-right: 1.5rem !important;
+}
+
+/* line 21, ../sass/utils/_spacing.scss */
+.m-b-md {
+  margin-bottom: 1.5rem !important;
+}
+
+/* line 22, ../sass/utils/_spacing.scss */
+.m-l-md {
+  margin-left: 1.5rem !important;
+}
+
+/* line 23, ../sass/utils/_spacing.scss */
+.m-x-md {
+  margin-right: 1.5rem !important;
+  margin-left: 1.5rem !important;
+}
+
+/* line 24, ../sass/utils/_spacing.scss */
+.m-y-md {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* line 26, ../sass/utils/_spacing.scss */
+.m-a-lg {
+  margin: 3rem !important;
+}
+
+/* line 27, ../sass/utils/_spacing.scss */
+.m-t-lg {
+  margin-top: 3rem !important;
+}
+
+/* line 28, ../sass/utils/_spacing.scss */
+.m-r-lg {
+  margin-right: 3rem !important;
+}
+
+/* line 29, ../sass/utils/_spacing.scss */
+.m-b-lg {
+  margin-bottom: 3rem !important;
+}
+
+/* line 30, ../sass/utils/_spacing.scss */
+.m-l-lg {
+  margin-left: 3rem !important;
+}
+
+/* line 31, ../sass/utils/_spacing.scss */
+.m-x-lg {
+  margin-right: 3rem !important;
+  margin-left: 3rem !important;
+}
+
+/* line 32, ../sass/utils/_spacing.scss */
+.m-y-lg {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+
+/* line 36, ../sass/utils/_spacing.scss */
+.p-a-0 {
+  padding: 0 !important;
+}
+
+/* line 37, ../sass/utils/_spacing.scss */
+.p-t-0 {
+  padding-top: 0 !important;
+}
+
+/* line 38, ../sass/utils/_spacing.scss */
+.p-r-0 {
+  padding-right: 0 !important;
+}
+
+/* line 39, ../sass/utils/_spacing.scss */
+.p-b-0 {
+  padding-bottom: 0 !important;
+}
+
+/* line 40, ../sass/utils/_spacing.scss */
+.p-l-0 {
+  padding-left: 0 !important;
+}
+
+/* line 41, ../sass/utils/_spacing.scss */
+.p-x-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* line 42, ../sass/utils/_spacing.scss */
+.p-y-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* line 44, ../sass/utils/_spacing.scss */
+.p-a {
+  padding: 1rem !important;
+}
+
+/* line 45, ../sass/utils/_spacing.scss */
+.p-t {
+  padding-top: 1rem !important;
+}
+
+/* line 46, ../sass/utils/_spacing.scss */
+.p-r {
+  padding-right: 1rem !important;
+}
+
+/* line 47, ../sass/utils/_spacing.scss */
+.p-b {
+  padding-bottom: 1rem !important;
+}
+
+/* line 48, ../sass/utils/_spacing.scss */
+.p-l {
+  padding-left: 1rem !important;
+}
+
+/* line 49, ../sass/utils/_spacing.scss */
+.p-x {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+/* line 50, ../sass/utils/_spacing.scss */
+.p-y {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+/* line 52, ../sass/utils/_spacing.scss */
+.p-a-md {
+  padding: 1.5rem !important;
+}
+
+/* line 53, ../sass/utils/_spacing.scss */
+.p-t-md {
+  padding-top: 1.5rem !important;
+}
+
+/* line 54, ../sass/utils/_spacing.scss */
+.p-r-md {
+  padding-right: 1.5rem !important;
+}
+
+/* line 55, ../sass/utils/_spacing.scss */
+.p-b-md {
+  padding-bottom: 1.5rem !important;
+}
+
+/* line 56, ../sass/utils/_spacing.scss */
+.p-l-md {
+  padding-left: 1.5rem !important;
+}
+
+/* line 57, ../sass/utils/_spacing.scss */
+.p-x-md {
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
+
+/* line 58, ../sass/utils/_spacing.scss */
+.p-y-md {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+/* line 60, ../sass/utils/_spacing.scss */
+.p-a-lg {
+  padding: 3rem !important;
+}
+
+/* line 61, ../sass/utils/_spacing.scss */
+.p-t-lg {
+  padding-top: 3rem !important;
+}
+
+/* line 62, ../sass/utils/_spacing.scss */
+.p-r-lg {
+  padding-right: 3rem !important;
+}
+
+/* line 63, ../sass/utils/_spacing.scss */
+.p-b-lg {
+  padding-bottom: 3rem !important;
+}
+
+/* line 64, ../sass/utils/_spacing.scss */
+.p-l-lg {
+  padding-left: 3rem !important;
+}
+
+/* line 65, ../sass/utils/_spacing.scss */
+.p-x-lg {
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+}
+
+/* line 66, ../sass/utils/_spacing.scss */
+.p-y-lg {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+/* line 4, ../sass/utils/_float.scss */
+.float-left {
+  float: left !important;
+}
+
+/* line 4, ../sass/utils/_float.scss */
+.float-right {
+  float: right !important;
+}
+
+/* line 4, ../sass/utils/_float.scss */
+.float-none {
+  float: none !important;
+}
+
+/* line 2, ../sass/utils/_image.scss */
+.headerbg-icon {
+  background-image: url("../images/headerbg.jpg");
+}
+
+/* line 2, ../sass/utils/_image.scss */
+.banner-icon {
+  background-image: url("../images/banner.jpg");
+}
+
+/* line 2, ../sass/utils/_image.scss */
+.amount-icon {
+  background-image: url("../images/amount.jpg");
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url("/assets/fonts/Roboto/Roboto-Thin.ttf");
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url("/assets/fonts/Roboto/Roboto-Regular.ttf");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url("/assets/fonts/Roboto/Roboto-Light.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url("/assets/fonts/Roboto/Roboto-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+/* line 3, ../sass/_custom.scss */
+.inner-title:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  padding-top: 9px;
+  border-bottom: 4px solid #6195FF;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 9, ../sass/_custom.scss */
+header {
+  color: #ffffff;
+}
+/* line 13, ../sass/_custom.scss */
+header .nav-menu {
+  background-color: transparent;
+  border: none;
+}
+/* line 17, ../sass/_custom.scss */
+header .nav-menu .navbar-brand {
+  color: #ffffff;
+}
+/* line 25, ../sass/_custom.scss */
+header .nav-menu .nav-right-menu li a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  padding: 10px;
+  position: relative;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+/* line 32, ../sass/_custom.scss */
+header .nav-menu .nav-right-menu li a i {
+  line-height: 0;
+  font-size: 20px;
+  position: relative;
+  top: 3px;
+}
+/* line 39, ../sass/_custom.scss */
+header .nav-menu .nav-right-menu li a:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 7px;
+  left: 10px;
+  right: 10px;
+  background-color: #6195FF;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+/* line 60, ../sass/_custom.scss */
+header .nav-menu .nav-right-menu li a:hover {
+  text-decoration: none;
+  color: white;
+}
+/* line 64, ../sass/_custom.scss */
+header .nav-menu .nav-right-menu li a:hover:after {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/* line 74, ../sass/_custom.scss */
+header .nav-menu .nav-right-menu li a:active, header .nav-menu .nav-right-menu li a:focus {
+  outline: none;
+  text-decoration: none;
+  color: #ffffff;
+}
+/* line 87, ../sass/_custom.scss */
+header .header-inner-content .learn-btn {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: #6195FF;
+  color: #ffffff;
+  border: none;
+}
+
+/* line 96, ../sass/_custom.scss */
+.welcome-block {
+  background-color: #ffffff;
+}
+/* line 99, ../sass/_custom.scss */
+.welcome-block .welcome-icon-section {
+  border: 1px solid #EEEEEE;
+}
+/* line 101, ../sass/_custom.scss */
+.welcome-block .welcome-icon-section i {
+  font-size: 2.28rem;
+  color: #6195FF;
+}
+
+/* line 111, ../sass/_custom.scss */
+.offer-block .offer-inner-content {
+  border: 1px solid #EEEEEE;
+}
+/* line 114, ../sass/_custom.scss */
+.offer-block .offer-inner-content .offer-icon-content {
+  display: inline-block;
+}
+
+/* line 120, ../sass/_custom.scss */
+.amount-content {
+  color: #ffffff;
+}
+/* line 122, ../sass/_custom.scss */
+.amount-content i {
+  color: #6195FF;
+  font-size: 2.28rem;
+}
+
+/* line 129, ../sass/_custom.scss */
+.pricing-table-block {
+  background-color: #ffffff;
+}
+/* line 132, ../sass/_custom.scss */
+.pricing-table-block .pricing-table-list {
+  border: 1px solid #EEEEEE;
+}
+/* line 134, ../sass/_custom.scss */
+.pricing-table-block .pricing-table-list p {
+  color: #5f5f5f;
+  padding: 1rem;
+}
+/* line 139, ../sass/_custom.scss */
+.pricing-table-block .pricing-table-list h4 {
+  border: 1px solid #6195FF;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  line-height: 54px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+/* line 150, ../sass/_custom.scss */
+.pricing-table-block .pricing-table-list .purchase-btn {
+  background-color: #ffffff;
+  border: 1px solid #6195FF;
+  color: #6195FF;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 156, ../sass/_custom.scss */
+.pricing-table-block .pricing-table-list .purchase-btn:hover {
+  background-color: #6195FF;
+  color: #ffffff;
+}
+
+/* line 167, ../sass/_custom.scss */
+.post-detail-block .post-img img {
+  border-radius: 50px;
+  width: 40px;
+  float: left;
+}
+/* line 175, ../sass/_custom.scss */
+.post-detail-block .post-side-block .post-name {
+  color: #ffffff;
+}
+/* line 180, ../sass/_custom.scss */
+.post-detail-block .post-side-block .post-title {
+  color: #6195FF;
+}
+/* line 185, ../sass/_custom.scss */
+.post-detail-block p {
+  color: #ffffff;
+}
+
+/* line 190, ../sass/_custom.scss */
+.team-block {
+  background-color: #ffffff;
+}
+/* line 193, ../sass/_custom.scss */
+.team-block .team-img-block {
+  background-color: #FAFAFA;
+}
+/* line 196, ../sass/_custom.scss */
+.team-block .team-img-block .team-title {
+  color: #6195FF;
+}
+
+/* line 203, ../sass/_custom.scss */
+.recent-news-block .thumbnail {
+  border: none;
+}
+/* line 206, ../sass/_custom.scss */
+.recent-news-block .thumbnail .left-side {
+  color: #000000;
+}
+/* line 209, ../sass/_custom.scss */
+.recent-news-block .thumbnail .left-side i {
+  color: #6195FF;
+}
+/* line 215, ../sass/_custom.scss */
+.recent-news-block .news-title {
+  color: #000000;
+}
+
+/* line 220, ../sass/_custom.scss */
+.contact-block {
+  background-color: #ffffff;
+}
+/* line 224, ../sass/_custom.scss */
+.contact-block .contact-list-content i {
+  font-size: 2.28rem;
+  color: #6195FF;
+}
+/* line 231, ../sass/_custom.scss */
+.contact-block .form-area input, .contact-block .form-area textarea {
+  box-shadow: none;
+  border: none;
+  background-color: #FAFAFA;
+}
+/* line 237, ../sass/_custom.scss */
+.contact-block .form-area .msg_btn {
+  background-color: #6195FF;
+  border: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 242, ../sass/_custom.scss */
+.contact-block .form-area .msg_btn:hover {
+  background-color: #ffffff;
+  color: #6195FF;
+  border: 1px solid #6195FF;
+}
+
+/* line 251, ../sass/_custom.scss */
+footer {
+  background-color: #1C1D21;
+  color: #ffffff;
+}
+/* line 256, ../sass/_custom.scss */
+footer .ftr-social-btn li {
+  display: inline;
+}
+/* line 259, ../sass/_custom.scss */
+footer .ftr-social-btn li a {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: #ffffff;
+  display: inline-block;
+  border: 1px solid #6195FF;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #6195FF;
+}
+/* line 269, ../sass/_custom.scss */
+footer .ftr-social-btn li a:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+/* line 277, ../sass/_custom.scss */
+footer .copyright-section {
+  color: #868F9B;
+}

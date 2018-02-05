@@ -1,0 +1,5 @@
+@each $images in headerbg, banner, amount {
+  .#{$images}-icon {
+    background-image: url('../images/#{$images}.jpg');
+  }
+}

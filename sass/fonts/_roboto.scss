@@ -1,0 +1,28 @@
+//Importing Roboto
+@font-face {
+	font-family: 'Roboto', sans-serif;
+  src: url($base-roboto-path + 'Roboto-Thin.ttf');
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+	font-family: 'Roboto', sans-serif;
+  src: url($base-roboto-path + 'Roboto-Regular.ttf');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Roboto', sans-serif;
+  src: url($base-roboto-path + 'Roboto-Light.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Roboto', sans-serif;
+  src: url($base-roboto-path + 'Roboto-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+}

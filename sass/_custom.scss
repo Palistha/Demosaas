@@ -1,0 +1,280 @@
+
+	.inner-title {
+		&:after {
+			@include contents;
+		}
+	}
+
+
+header {
+
+	color: $white;
+
+		.nav-menu {
+			background-color: transparent;
+			border:none;
+
+			.navbar-brand {
+				color: $white;
+			}
+
+			.nav-right-menu {
+
+				li {
+					
+					 a {
+						color: rgba(255,255,255,.7);
+						font-size: 18px;
+						padding: 10px;
+						position: relative;
+						@include transition(.2s);
+
+						i {
+							line-height: 0;
+							font-size: 20px;
+							position: relative;
+							top: 3px;
+						}
+
+						&:after {
+							content: "";
+							position: absolute;
+							height: 2px;
+							bottom: 7px;
+							left: 10px;
+							right: 10px;
+							background-color: $theme-color;
+							visibility: hidden;
+							-webkit-transform: scaleX(0);
+							-moz-transform: scaleX(0);
+							-ms-transform: scaleX(0);
+							-o-transform: scaleX(0);
+							transform: scaleX(0);
+							-webkit-transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+							-moz-transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+							-ms-transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+							-o-transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+							transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+						}
+
+						&:hover {
+							text-decoration: none;
+							color: rgba(255,255,255,1);
+							
+							&:after {
+								visibility: visible;
+								-webkit-transform: scaleX(1);
+								-moz-transform: scaleX(1);
+								-ms-transform: scaleX(1);
+								-o-transform: scaleX(1);
+								transform: scaleX(1);
+							}
+						}
+
+						&:active, &:focus {
+							outline: none;
+							text-decoration: none;
+							color: $white;
+						}
+					}
+					
+				}
+				
+			}
+		}	
+
+		.header-inner-content {
+			.learn-btn {
+				@include transition (all 0.5s ease-in-out);
+				background-color:$theme-color;
+				color: $white;
+				border: none;
+			}
+		}
+}
+
+	.welcome-block {
+		background-color: $white;
+
+			.welcome-icon-section {
+				border:1px solid $border-color;
+				i {
+					font-size:$h4-fontsize;
+					color: $theme-color;
+						}
+			}
+	}
+
+
+	.offer-block {
+		
+		.offer-inner-content {
+			border:1px solid $border-color;
+
+			.offer-icon-content {
+				display: inline-block;
+			}
+		}
+	}
+
+	.amount-content {
+		color: $white;
+		i {
+			color: $theme-color;
+			font-size:$h4-fontsize;
+		}
+	}
+
+
+	.pricing-table-block {
+		background-color: $white;
+
+		.pricing-table-list {
+			border:1px solid $border-color;
+			p {
+				color:#5f5f5f;
+				padding: $spacer-y;
+			}
+
+			h4 {
+				border: 1px solid $theme-color;
+				border-radius: 50%;
+				width: 160px;
+				height: 160px;
+				line-height: 54px;
+				text-align: center;
+				display: block;
+				margin: 0 auto;
+			}
+
+			.purchase-btn {
+				background-color: $white;
+				border: 1px solid $theme-color;
+				color: $theme-color;
+				@include transition (all 0.5s ease-in-out);
+
+				&:hover {
+					background-color: $theme-color;
+					color: $white;
+				}
+				}
+		}
+	}
+	
+
+	.post-detail-block {
+		.post-img {
+			img {
+				border-radius:50px;
+				width: 40px;
+				float: left;
+			}
+		}
+
+		.post-side-block {
+			.post-name {
+				color: $white;
+			}
+
+
+			.post-title {
+				color: $theme-color;
+			}
+		}
+
+		p {
+			color: $white;
+		}
+	}
+
+	.team-block {
+		background-color: $white;
+
+		.team-img-block {
+			background-color: $body-bg-color;
+
+			.team-title {
+				color: $theme-color;
+			}
+		}
+	}
+
+	.recent-news-block {
+		.thumbnail {
+			border:none;
+
+			.left-side {
+				color: $black;
+
+				i {
+					color: $theme-color;
+				}
+			}
+		}
+
+		.news-title {
+			color: $black;
+		}
+	}
+
+	.contact-block {
+		background-color: $white;
+
+		.contact-list-content {
+			i {
+				font-size: $h4-fontsize;
+				color: $theme-color;
+			}
+		}
+
+		.form-area {
+			input,textarea {
+				box-shadow: none;
+				border: none;
+				background-color: $body-bg-color;
+			}
+
+			.msg_btn {
+					background-color: $theme-color;
+					border: none;
+					@include transition (all 0.5s ease-in-out);
+
+					&:hover {
+						background-color: $white;
+						color: $theme-color;
+						border: 1px solid $theme-color;
+					}
+				}
+		}
+	}
+
+	footer {
+		background-color: $footer-bg-color;
+		color: $white;
+
+		.ftr-social-btn {
+			li {
+				display: inline;
+
+				a {
+					@include transition(all 0.5s ease-in-out);
+					color: $white;
+					display: inline-block;
+					border: 1px solid $theme-color;
+					width: 60px;
+					height: 60px;
+					line-height: 60px;
+					background-color:$theme-color;
+
+					&:hover {
+						background-color: rgba(0,0,0,0.9);
+					}
+				}
+				
+			}
+		}
+
+		.copyright-section {
+			color: $footer-copyright-font-color;
+		}
+	}
